@@ -2,7 +2,7 @@
 
 ## Autor
 
-**Kevin Valdivieso**
+**Kevin Patricio Valdivieso Gavilanez**
 
 ---
 
