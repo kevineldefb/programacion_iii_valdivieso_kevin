@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Multimedia</title>
 </head>
 <body>
     <h1>Multimedia</h1>
-    <h2>Reproductor de Audio</h2> 
-    <audio src="music/music_demo.mp3" controls>Tu navegador no soporta audio HTML5</audio>
+    <h2>Reproducir sonido</h2>
+    <audio id="musica" src="music/music_demo.mp3" controls autoplay loop>Tu navegador no soporta el audio de HTML5</audio>
+    <h2>Reproducir video</h2>
+    <video id="video" src="videos/video_demo.mp4" controls width="500" height="300" autoplay loop>
+        Tu navegador no soporta el video de HTML5
+    </video>
+    <h1>Portal Galáctico</h1>
+    <h2>Informacion de la academia jedi</h2>
+    <iframe src="https://es.wikipedia.org/wiki/Star_Wars" width="800" height="600" title="Star Wars" loading="lazy"></iframe>
 </body>
 </html>
