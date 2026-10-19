@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia del Transporte Público</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header id="cabecera" title="Multimedia del Transporte Público">
+        <h1>Multimedia del Transporte Público</h1>
+        <h2>Imágenes, sonidos y videos sobre la movilidad</h2>
+    </header>
+
+    <nav id="menu" title="Menú Principal">
+        <a href="index.html">Inicio</a><br>
+        <a href="personajes.html">Personas del transporte</a><br>
+        <a href="misiones.html">Rutas y recorridos</a><br>
+        <a href="multimedia.html">Videos, sonidos y fotos</a><br>
+        <a href="inscripcion.html">Formulario de inscripción</a><br>
+    </nav>
+
+    <main id="contenido" title="Recursos multimedia del transporte público">
+        <h2>Galería de imágenes</h2>
+        <p>
+            Conoce algunos elementos importantes del transporte público a través de estas imágenes.
+            Los buses y las paradas permiten que los ciudadanos se movilicen diariamente hacia sus destinos.
+        </p>
+
+        <section id="galeria">
+            <h3>El transporte público</h3>
+            <img src="imagenes/transporte_publico.jpg"
+                 alt="Medios de transporte público"
+                 width="400">
+
+            <h3>Las paradas de bus</h3>
+            <img src="imagenes/autobus_urbano.jpg"
+                 alt="Parada de transporte público"
+                 width="400">
+
+            <h3>Los buses</h3>
+            <img src="imagenes/movilidad_quito.jpg"
+                 alt="Bus de transporte público"
+                 width="400">
+        </section>
+
+        <section id="audio">
+            <h2>Reproductor de audio</h2>
+            <p>
+                Escucha un sonido relacionado con el transporte público.
+            </p>
+
+            <audio controls>
+                <source src="audios/sonido_bus.ogg" type="audio/ogg">
+                Tu navegador no soporta el elemento de audio HTML5.
+            </audio>
+        </section>
+
+        <section id="video">
+            <h2>Reproductor de video</h2>
+            <p>
+                Observa un video relacionado con los medios de transporte.
+            </p>
+
+            <video controls width="500">
+                <source src="videos/metro_quito.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video HTML5.
+            </video>
+        </section>
+
+        <section id="subtitulos">
+            <h2>Video con subtítulos</h2>
+            <p>
+                Este reproductor permite mostrar subtítulos si tienes un archivo de subtítulos en formato VTT.
+            </p>
+
+            <video controls width="500">
+                <source src="videos/metro_quito.mp4" type="video/mp4">
+                <track src="subtitulos/metro_quito.vtt"
+                       kind="subtitles"
+                       srclang="es"
+                       label="Español"
+                       default>
+                Tu navegador no soporta el elemento de video HTML5.
+            </video>
+        </section>
+
+        <aside id="curiosidades">
+            <h2>Sabías que...</h2>
+            <p>
+                Los recursos multimedia, como imágenes, audios y videos, permiten conocer mejor
+                los diferentes medios de transporte y comprender su importancia en la vida cotidiana.
+            </p>
+        </aside>
+
+        <footer id="contacto">
+            <p>
+                <small>Portal de Transporte Público</small>
+            </p>
+            <p>Autor: Kevin Valdivieso</p>
+        </footer>
+    </main>
+</body>
+
+</html>
