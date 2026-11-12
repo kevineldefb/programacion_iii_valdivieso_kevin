@@ -80,3 +80,4 @@ function contarMisionesExitosas(cristales) {
 let misiones = [10, 60, 75, 30, 80, 45];
 
 contarMisionesExitosas(misiones);
+
