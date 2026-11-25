@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de rutas</title>
+</head>
+<body>
+    <header>
+        <h1>Portal de Transporte Público</h1>
+        <p>Registro de una nueva ruta</p>
+    </header>
+    <hr>
+    <main>
+        <form action="#" method="get" id="registro-ruta">
+            <fieldset>
+                <legend>Información de la ruta</legend>
+                <label for="codigo">Código de ruta:</label>
+                <input type="text" id="codigo" name="codigo" placeholder="RUT-001" maxlength="10" required>
+                <br><br>
+                <label for="ruta">Nombre de la ruta:</label>
+                <input type="text" id="ruta" name="ruta" placeholder="Ej. Norte - Centro" required>
+                <br><br>
+                <label for="transporte">Medio de transporte:</label>
+                <select id="transporte" name="transporte" required>
+                    <option value="">Selecciona un transporte</option>
+                    <option value="autobus">Autobús</option>
+                    <option value="trolebus">Trolebús</option>
+                    <option value="metro">Metro</option>
+                    <option value="alimentador">Alimentador</option>
+                </select>
+                <br><br>
+                <label for="fecha">Fecha de inicio del servicio:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Características del servicio</legend>
+                <p>Tipo de jornada:</p>
+                <input type="radio" id="completa" name="jornada" value="completa" required>
+                <label for="completa">Todo el día</label>
+                <input type="radio" id="parcial" name="jornada" value="parcial">
+                <label for="parcial">Medio día</label>
+                <br><br>
+                <label for="frecuencia">Frecuencia de paso en minutos:</label>
+                <input type="number" id="frecuencia" name="frecuencia" min="1" max="120" value="15">
+                <p>Servicios que ofrece:</p>
+                <input type="checkbox" id="accesibilidad" name="servicios" value="accesibilidad">
+                <label for="accesibilidad">Accesibilidad</label>
+                <br>
+                <input type="checkbox" id="wifi" name="servicios" value="wifi">
+                <label for="wifi">Wi-Fi</label>
+                <br>
+                <input type="checkbox" id="aire" name="servicios" value="aire">
+                <label for="aire">Ventilación adecuada</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Descripción de la ruta</legend>
+                <label for="descripcion">Recorrido y paradas principales:</label>
+                <br>
+                <textarea id="descripcion" name="descripcion" rows="5" cols="45" maxlength="500" placeholder="Describe el recorrido y las paradas principales..." required></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">Registrar ruta</button>
+            <button type="reset">Limpiar datos</button>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p><small>Portal de Transporte Público - 2026</small></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Transporte Público</title>
+</head>
+<body>
+    <h1>Registro de usuario de transporte público</h1>
+    <form action="#" method="get">
+        <table>
+            <tr>
+                <td>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan" minlength="2" maxlength="40" required>
+                </td>
+                <td>
+                    <label for="apellido">Apellido:</label><br>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ej. Pérez" minlength="2" maxlength="40" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="correo">Correo electrónico:</label><br>
+                    <input type="email" id="correo" name="correo" placeholder="ana@ejemplo.com" required>
+                </td>
+                <td>
+                    <label for="telefono">Teléfono:</label><br>
+                    <input type="tel" id="telefono" name="telefono" placeholder="0991234567">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="edad">Edad:</label><br>
+                    <input type="number" id="edad" name="edad" min="18" max="100">
+                </td>
+                <td>
+                    <label for="viajes">Viajes por semana:</label><br>
+                    <input type="number" id="viajes" name="viajes" min="0" max="100" value="0">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Medio de transporte:</p>
+                    <input type="radio" id="autobus" name="transporte" value="autobus" required>
+                    <label for="autobus">Autobús</label>
+                    <input type="radio" id="trolebus" name="transporte" value="trolebus">
+                    <label for="trolebus">Trolebús</label>
+                    <input type="radio" id="metro" name="transporte" value="metro">
+                    <label for="metro">Metro</label>
+                </td>
+                <td>
+                    <p>Motivo del viaje:</p>
+                    <input type="checkbox" id="trabajo" name="motivo" value="trabajo">
+                    <label for="trabajo">Trabajo</label><br>
+                    <input type="checkbox" id="estudio" name="motivo" value="estudio">
+                    <label for="estudio">Estudio</label><br>
+                    <input type="checkbox" id="turismo" name="motivo" value="turismo">
+                    <label for="turismo">Turismo</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sector">Sector de destino:</label><br>
+                    <select id="sector" name="sector" required>
+                        <option value="">Selecciona un sector</option>
+                        <option value="norte">Norte de Quito</option>
+                        <option value="centro">Centro de Quito</option>
+                        <option value="sur">Sur de Quito</option>
+                        <option value="valles">Valles de Quito</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="servicios">Servicios que utiliza:</label><br>
+                    <select id="servicios" name="servicios" multiple size="3">
+                        <option value="autobus">Autobús urbano</option>
+                        <option value="trolebus">Trolebús</option>
+                        <option value="metro">Metro de Quito</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Planificación del viaje</legend>
+                        <label for="fecha-viaje">Fecha del viaje:</label><br>
+                        <input type="date" id="fecha-viaje" name="fecha-viaje">
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+        <button type="submit">Enviar registro</button>
+        <button type="reset">Borrar datos</button>
+    </form>
+</body>
+</html>
