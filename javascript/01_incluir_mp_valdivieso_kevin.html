@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Transporte Público - Introducción a JavaScript</title>
+
+    <script>
+        alert('¡Bienvenido al portal de Transporte Público!');
+        console.log('Página de Transporte Público cargada correctamente');
+    </script>
+</head>
+<body>
+
+    <h1>Transporte Público y JavaScript</h1>
+
+    <h2>Modo Inline (Eventos Directos)</h2>
+
+    <button onclick="alert('¡Bienvenido al servicio de transporte público!')">
+        Consultar Servicio
+    </button>
+
+    <br><br>
+
+    <label for="buscar-ruta">Buscar una ruta:</label>
+
+    <input type="text"
+        id="buscar-ruta"
+        oninput="console.log('Buscando ruta:', this.value)"
+        placeholder="Ingrese el número de ruta...">
+
+    <br><br>
+
+    <label for="transporte">Seleccionar transporte:</label>
+
+    <input type="text"
+        id="transporte"
+        onchange="console.log('Transporte seleccionado:', this.value)"
+        placeholder="Ejemplo: Autobús, Metro...">
+
+    <br><br>
+
+    <label for="observaciones">Opinión sobre el transporte público:</label>
+
+    <input type="text"
+        id="observaciones"
+        onfocus="console.log('El usuario está escribiendo su opinión...')"
+        onblur="alert('¡Gracias por compartir tu opinión!')"
+        placeholder="Escribe tu opinión...">
+
+    <script src="01_incluir_mp_valdivieso_kevin.js"></script>
+
+</body>
+</html>
