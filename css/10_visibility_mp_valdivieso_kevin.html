@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibilidad y posición - Transporte Público</title>
+    <link rel="stylesheet" href="10_visibility_mp_valdivieso_kevin.css">
+</head>
+<body>
+    <header>
+        <h1>Portal de Transporte Público</h1>
+    </header>
+
+    <nav>
+        <a href="#equipo">Personal</a>
+        <a href="#vacantes">Rutas</a>
+        <a href="#bienestar">Seguridad</a>
+    </nav>
+
+    <h1>Servicios de Transporte</h1>
+    <p>Servicio 1: Transporte urbano</p>
+    <p class="secreta">Aviso interno de organización de rutas</p>
+    <p>Servicio 2: Transporte interprovincial</p>
+
+    <h1 id="equipo">Personal del transporte</h1>
+    <h2>Uso de la propiedad position</h2>
+    <div class="caja">Conductores</div>
+    <div class="caja">Controladores de rutas</div>
+    <div class="especial">Personal de mantenimiento</div>
+
+    <h2>Uso de position: absolute</h2>
+    <div class="tarjeta-relativa">
+        <span class="etiqueta">TP</span>
+        <h1>Servicio al pasajero</h1>
+        <p>Atención y orientación para los usuarios del transporte público.</p>
+    </div>
+
+    <h2 id="vacantes">Uso de position: fixed</h2>
+    <h2>Movilidad segura</h2>
+    <p>El respeto a las señales de tránsito ayuda a prevenir accidentes.</p>
+    <p>La planificación de rutas permite organizar los recorridos.</p>
+    <p>El mantenimiento de los buses contribuye a la seguridad de los pasajeros.</p>
+
+    <section id="bienestar">
+        <h2>Seguridad de los pasajeros</h2>
+        <p>Promovemos el respeto, la accesibilidad y la responsabilidad durante los viajes.</p>
+    </section>
+
+    <a class="boton-fijo" href="#bienestar">Ver seguridad</a>
+</body>
+</html>
