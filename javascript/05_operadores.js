@@ -63,3 +63,27 @@ console.log('Operadores Ternarios');
 let edad = 20;
 let mensaje = (edad >= 18) ? 'Eres mayor de edad' : 'Eres menor de edad';
 console.log(mensaje);
+
+console.log('Tabla de multiplicar del 5');
+console.log('1 x ${5} = ${1 * 5}');
+console.log('2 x ${5} = ${2 * 5}');
+console.log('3 x ${5} = ${3 * 5}');
+console.log('4 x ${5} = ${4 * 5}');
+console.log('5 x ${5} = ${5 * 5}');
+console.log('6 x ${5} = ${6 * 5}');
+console.log('7 x ${5} = ${7 * 5}');
+console.log('8 x ${5} = ${8 * 5}');
+console.log('9 x ${5} = ${9 * 5}');
+console.log('10 x ${5} = ${10 * 5}');
+
+console.log('Tabla de división del 5');
+console.log('5 / 1 = ${5 / 5}');
+console.log('5 / 2 = ${10 / 5}');
+console.log('5 / 3 = ${15 / 5}');
+console.log('5 / 4 = ${20 / 5}');
+console.log('5 / 5 = ${25 / 5}');
+console.log('5 / 6 = ${30 / 5}');
+console.log('5 / 7 = ${35 / 5}');
+console.log('5 / 8 = ${40 / 5}');
+console.log('5 / 9 = ${45 / 5}');
+console.log('5 / 10 = ${50 / 5}');

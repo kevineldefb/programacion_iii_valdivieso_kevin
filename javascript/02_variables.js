@@ -28,5 +28,8 @@ console.log(tieneCombustible);
 
 var personaje='Jerry';
 console.log('Personaje', personaje);
-personaje="Rick";
+var personaje="Rick";
 console.log("Nuevo Personaje", personaje);
+
+const protagonista ='Jerry';
+console.log('Protagonista', protagonista);
